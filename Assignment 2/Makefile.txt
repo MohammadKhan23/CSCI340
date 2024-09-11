@@ -1,0 +1,8 @@
+matrix: main.cpp matrix.cc
+	 g++ -std=c++14 -Wall -Werror -Wextra -pedantic -g -o matrix main.cpp matrix.cc
+
+clean:
+	 rm -f matrix
+
+world: clean matrix
+
